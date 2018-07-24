@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "add BLV-ID", "add BLV-ID.csproj", "{055A3CDB-DA72-4245-AB74-A3611C29362A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055A3CDB-DA72-4245-AB74-A3611C29362A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055A3CDB-DA72-4245-AB74-A3611C29362A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055A3CDB-DA72-4245-AB74-A3611C29362A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055A3CDB-DA72-4245-AB74-A3611C29362A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BC33915-2A68-42EA-82C5-3BC1A1FAA990}
+	EndGlobalSection
+EndGlobal

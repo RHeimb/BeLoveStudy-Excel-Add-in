@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabAddIns">
+                <group id="group1" label="Add BeLove-ID">
+                    <editBox id="editBox1" onChange="editBox1_TextChanged" label="BLV-ID:" showImage="false" />
+                    <button id="btn_add" onAction="btn_add_Click" label="Add" showImage="false" />
+                </group>
+                <group id="group2" label="Positon of BLV-ID">
+                    <editBox id="row_editBox" onChange="row_editBox_TextChanged" label="Row" showImage="false" />
+                    <editBox id="column_editBox" label="Column" showImage="false" />
+                    <button id="btn_select" onAction="btn_select_Click" label="Select" showImage="false" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

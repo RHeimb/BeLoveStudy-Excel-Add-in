@@ -1,0 +1,13 @@
+C:\Users\rober\source\repos\add BLV-ID\bin\Release\add BLV-ID.dll
+C:\Users\rober\source\repos\add BLV-ID\bin\Release\add BLV-ID.pdb
+C:\Users\rober\source\repos\add BLV-ID\bin\Release\add BLV-ID.dll.manifest
+C:\Users\rober\source\repos\add BLV-ID\bin\Release\add BLV-ID.vsto
+C:\Users\rober\source\repos\add BLV-ID\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add_BLV_ID.addBlvIdField.resources
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add_BLV_ID.Properties.Resources.resources
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.csproj.GenerateResource.cache
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.csproj.CoreCompileInputs.cache
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.csproj.CopyComplete
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.dll
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.pdb
+C:\Users\rober\source\repos\add BLV-ID\obj\Release\add BLV-ID.csprojAssemblyReference.cache
