@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <appSettings>
-    <add key="pathToSafeTablesForDFD" value="ccc"/>
-    <add key ="regexForWorkBookNameCheck" value=""/>
-  </appSettings> 
-</configuration>

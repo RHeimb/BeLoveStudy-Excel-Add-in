@@ -10,13 +10,22 @@ namespace add_BLV_ID
             this.column_editBox.Text = "A";
             this.row_editBox.Text = "1";
             this.editBox2.Text = Globals.addBeLoveId.pathToSafeTablesForDFD.ToString();
+            this.editBox3.Text = Globals.addBeLoveId.regexString;
         }
 
         private void btn_add_Click(object sender, RibbonControlEventArgs e)
         {
             Worksheet activeSheet = Globals.addBeLoveId.GetActiveWS();
             string markedCell = GetCoordinatesFromEditbox();
-            activeSheet.Range[markedCell].Value = this.editBox1.Text;
+            if (activeSheet.Range[markedCell,markedCell].Value2 == null)
+            {
+                activeSheet.Range[markedCell,markedCell].Value2 = this.editBox1.Text;
+            }
+            else
+            {
+                Globals.addBeLoveId.InsertEntireRowAbove(activeSheet, markedCell);              
+                activeSheet.Range[markedCell,markedCell].Value2 = this.editBox1.Text;
+            }
         }
 
         private void editBox1_TextChanged(object sender, RibbonControlEventArgs e)
@@ -27,8 +36,7 @@ namespace add_BLV_ID
         private void btn_select_Click(object sender, RibbonControlEventArgs e)
         {
             //markiere Zelle
-            Globals.addBeLoveId.SelectCell(this.column_editBox.Text, this.row_editBox.Text);
-        
+            Globals.addBeLoveId.SelectCell(this.column_editBox.Text, this.row_editBox.Text);       
         }
 
         private void row_editBox_TextChanged(object sender, RibbonControlEventArgs e)
@@ -49,6 +57,12 @@ namespace add_BLV_ID
         {
             string newPath = this.editBox2.Text;
             Globals.addBeLoveId.SetPathToSafeTablesForDFD(newPath);
+        }
+
+        private void btn_changeRegEx_Click(object sender, RibbonControlEventArgs e)
+        {
+            string newRegEx = this.editBox3.Text;
+            Globals.addBeLoveId.SetRegexForWorkBookNameCheck(newRegEx);
         }
     }
 }

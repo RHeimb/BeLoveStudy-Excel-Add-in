@@ -63,6 +63,11 @@ namespace add_BLV_ID
             config.Save();
             ConfigurationManager.RefreshSection("appSettings");
         }
+        public void InsertEntireRowAbove(Excel.Worksheet activeSheet, string range)
+        {
+            Excel.Range r = activeSheet.get_Range(range,range).EntireRow;
+            r.Insert(Excel.XlInsertShiftDirection.xlShiftDown);
+        }
 
         //private methods
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
@@ -81,17 +86,16 @@ namespace add_BLV_ID
             {
                 string nameOfWB = Application.ActiveWorkbook.Name;
                 if (Regex.IsMatch(regexString, nameOfWB))
-                {
-                    Globals.Ribbons.addBlvIdField.editBox1.Text = "yes";
+                {   
+                    //check if "Cell" contains BLV-ID
                 }
                 else
                 {
-                    Globals.Ribbons.addBlvIdField.editBox1.Text = "no";
+                    //pass
                 }
             }
             catch (System.NullReferenceException)
             {
-
             }
         }
     }

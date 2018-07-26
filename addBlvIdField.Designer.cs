@@ -36,15 +36,17 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.editBox1 = this.Factory.CreateRibbonEditBox();
             this.btn_add = this.Factory.CreateRibbonButton();
+            this.editBox1 = this.Factory.CreateRibbonEditBox();
             this.group2 = this.Factory.CreateRibbonGroup();
+            this.btn_select = this.Factory.CreateRibbonButton();
             this.row_editBox = this.Factory.CreateRibbonEditBox();
             this.column_editBox = this.Factory.CreateRibbonEditBox();
-            this.btn_select = this.Factory.CreateRibbonButton();
             this.group3 = this.Factory.CreateRibbonGroup();
+            this.editBox3 = this.Factory.CreateRibbonEditBox();
+            this.btn_changeRegEx = this.Factory.CreateRibbonButton();
+            this.separator1 = this.Factory.CreateRibbonSeparator();
             this.editBox2 = this.Factory.CreateRibbonEditBox();
-            this.label1 = this.Factory.CreateRibbonLabel();
             this.btn_changePath = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
@@ -68,13 +70,6 @@
             this.group1.Label = "Add BeLove-ID";
             this.group1.Name = "group1";
             // 
-            // editBox1
-            // 
-            this.editBox1.Label = "BLV-ID:";
-            this.editBox1.Name = "editBox1";
-            this.editBox1.Text = null;
-            this.editBox1.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox1_TextChanged);
-            // 
             // btn_add
             // 
             this.btn_add.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -83,13 +78,28 @@
             this.btn_add.ShowImage = true;
             this.btn_add.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_add_Click);
             // 
+            // editBox1
+            // 
+            this.editBox1.Label = "BLV-ID:";
+            this.editBox1.Name = "editBox1";
+            this.editBox1.Text = null;
+            this.editBox1.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox1_TextChanged);
+            // 
             // group2
             // 
+            this.group2.Items.Add(this.btn_select);
             this.group2.Items.Add(this.row_editBox);
             this.group2.Items.Add(this.column_editBox);
-            this.group2.Items.Add(this.btn_select);
             this.group2.Label = "Positon of BLV-ID";
             this.group2.Name = "group2";
+            // 
+            // btn_select
+            // 
+            this.btn_select.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btn_select.Label = "Select";
+            this.btn_select.Name = "btn_select";
+            this.btn_select.ShowImage = true;
+            this.btn_select.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_select_Click);
             // 
             // row_editBox
             // 
@@ -104,37 +114,42 @@
             this.column_editBox.Name = "column_editBox";
             this.column_editBox.Text = null;
             // 
-            // btn_select
-            // 
-            this.btn_select.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.btn_select.Label = "Select";
-            this.btn_select.Name = "btn_select";
-            this.btn_select.ShowImage = true;
-            this.btn_select.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_select_Click);
-            // 
             // group3
             // 
+            this.group3.Items.Add(this.editBox3);
+            this.group3.Items.Add(this.btn_changeRegEx);
+            this.group3.Items.Add(this.separator1);
             this.group3.Items.Add(this.editBox2);
             this.group3.Items.Add(this.btn_changePath);
-            this.group3.Items.Add(this.label1);
-            this.group3.Label = "group3";
+            this.group3.Label = "Options";
             this.group3.Name = "group3";
+            // 
+            // editBox3
+            // 
+            this.editBox3.Label = "RegEx";
+            this.editBox3.Name = "editBox3";
+            this.editBox3.Text = null;
+            // 
+            // btn_changeRegEx
+            // 
+            this.btn_changeRegEx.Label = "Ok";
+            this.btn_changeRegEx.Name = "btn_changeRegEx";
+            this.btn_changeRegEx.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_changeRegEx_Click);
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
             // 
             // editBox2
             // 
-            this.editBox2.Label = "editBox2";
+            this.editBox2.Label = "Path";
             this.editBox2.Name = "editBox2";
-            this.editBox2.ShowLabel = false;
+            this.editBox2.Text = null;
             this.editBox2.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox2_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.Label = "Dateipfad zum Import durch DFD.";
-            this.label1.Name = "label1";
             // 
             // btn_changePath
             // 
-            this.btn_changePath.Label = "button1";
+            this.btn_changePath.Label = "Ok";
             this.btn_changePath.Name = "btn_changePath";
             this.btn_changePath.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btn_changePath_Click);
             // 
@@ -168,8 +183,10 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btn_select;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group3;
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox2;
-        internal Microsoft.Office.Tools.Ribbon.RibbonLabel label1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btn_changePath;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btn_changeRegEx;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator1;
     }
 
     partial class ThisRibbonCollection

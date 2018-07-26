@@ -26,3 +26,17 @@ C:\Users\rober\Source\Repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csproj
 C:\Users\rober\Source\Repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csproj.CopyComplete
 C:\Users\rober\Source\Repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.dll
 C:\Users\rober\Source\Repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.pdb
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\add BLV-ID.dll.config
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\add BLV-ID.dll
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\add BLV-ID.pdb
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\add BLV-ID.dll.manifest
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\add BLV-ID.vsto
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csprojResolveAssemblyReference.cache
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add_BLV_ID.addBlvIdField.resources
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add_BLV_ID.Properties.Resources.resources
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csproj.GenerateResource.cache
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csproj.CoreCompileInputs.cache
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.csproj.CopyComplete
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.dll
+C:\Users\robert\source\repos\BeLoveStudy-Excel-Add-in\obj\Debug\add BLV-ID.pdb
